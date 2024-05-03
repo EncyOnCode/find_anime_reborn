@@ -7,7 +7,7 @@ import '../search.dart';
 import 'search_view.dart';
 
 class SearchScreen extends StatelessWidget {
-  const SearchScreen({Key? key, this.traceMoeRepository}) : super(key: key);
+  const SearchScreen({super.key, this.traceMoeRepository});
   final TraceMoeRepository? traceMoeRepository;
 
   @override

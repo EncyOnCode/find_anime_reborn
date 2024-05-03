@@ -16,7 +16,7 @@ import '../search.dart';
 import '../widgets/result_list_item.dart';
 
 class SearchView extends StatelessWidget {
-  const SearchView({Key? key}) : super(key: key);
+  const SearchView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -51,8 +51,8 @@ class SearchView extends StatelessWidget {
 /// View with search view, initial view
 class InitialSearchView extends StatefulWidget {
   const InitialSearchView({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<InitialSearchView> createState() => _InitialSearchViewState();
@@ -128,7 +128,7 @@ class _InitialSearchViewState extends State<InitialSearchView> {
                     S.of(context).newSearch,
                     style: Theme.of(context)
                         .textTheme
-                        .headline4!
+                        .headlineMedium!
                         .copyWith(fontSize: 24.0),
                   ),
                   const SizedBox(
@@ -139,7 +139,7 @@ class _InitialSearchViewState extends State<InitialSearchView> {
                     textAlign: TextAlign.center,
                     style: Theme.of(context)
                         .textTheme
-                        .headline4!
+                        .headlineMedium!
                         .copyWith(fontSize: 18.0),
                   ),
                   Padding(
@@ -149,7 +149,7 @@ class _InitialSearchViewState extends State<InitialSearchView> {
                       child: TextFormField(
                         controller: _textEditingController,
                         textInputAction: TextInputAction.next,
-                        style: Theme.of(context).textTheme.headline4,
+                        style: Theme.of(context).textTheme.headlineMedium,
                         decoration: InputDecoration(
                           labelText: S.of(context).enterImageUrl,
                           helperText: S.of(context).enterImageUrlHint,
@@ -210,7 +210,7 @@ class _InitialSearchViewState extends State<InitialSearchView> {
 
 /// Loading indicator
 class BuildLoadingIndicator extends StatelessWidget {
-  const BuildLoadingIndicator({Key? key}) : super(key: key);
+  const BuildLoadingIndicator({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -220,7 +220,7 @@ class BuildLoadingIndicator extends StatelessWidget {
 
 /// Show error text
 class BuildError extends StatelessWidget {
-  const BuildError({Key? key, required this.errorText}) : super(key: key);
+  const BuildError({super.key, required this.errorText});
   final String errorText;
 
   @override
@@ -235,7 +235,7 @@ class BuildError extends StatelessWidget {
               errorText,
               style: Theme.of(context)
                   .textTheme
-                  .headline4!
+                  .headlineMedium!
                   .copyWith(fontSize: 24.0),
             ),
             Padding(
@@ -258,7 +258,7 @@ class BuildError extends StatelessWidget {
 }
 
 class ResultList extends StatelessWidget {
-  const ResultList({Key? key, required this.result}) : super(key: key);
+  const ResultList({super.key, required this.result});
   final List<Result> result;
 
   @override

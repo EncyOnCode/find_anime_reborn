@@ -25,19 +25,19 @@ dependencies:
   http: ^0.13.4
   duration: ^3.0.11
   url_launcher: ^6.1.5
-  file_picker: ^5.0.0
+  file_picker: ^8.0.3
   json_annotation: ^4.6.0
   video_player: ^2.4.5
   breakpoint: ^1.2.0
   colorize_text_avatar: ^1.0.2
   waterfall_flow: ^3.0.2
-  intl: ^0.17.0
-  flutter_dropzone: ^3.0.5
+  intl: ^0.18.1
+  flutter_dropzone: ^4.0.0
   pasteboard: ^0.2.0
   mime: ^1.0.2
 
-  firebase_core: ^1.20.1
-  firebase_auth: ^3.6.3
+  firebase_core: ^2.30.1
+  firebase_auth: ^4.19.4
 
   tracemoe_repository:
     path: packages/tracemoe_repository
@@ -49,12 +49,12 @@ dev_dependencies:
     sdk: flutter
   build_runner: ^2.2.0
   freezed: ^2.1.0+1
-  flutter_lints: ^2.0.1
+  flutter_lints: ^3.0.2
   bloc_test: ^9.0.3
-  dart_code_metrics: ^4.17.0
+  dart_code_metrics: ^5.7.6
   json_serializable: ^6.3.1
-  build_web_compilers: ^3.2.4
-  mocktail: ^0.3.0
+  build_web_compilers: ^4.0.10
+  mocktail: ^1.0.3
   coverage: ^1.5.0
 
 

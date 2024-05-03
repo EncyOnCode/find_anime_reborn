@@ -35,18 +35,18 @@ class MessageLookup extends MessageLookupByLibrary {
         "enterImageUrl":
             MessageLookupByLibrary.simpleMessage("Enter image URL"),
         "enterImageUrlHint": MessageLookupByLibrary.simpleMessage(
-            "Link should be direct to image"),
+            "Link should be direct to image",),
         "episodeText": m0,
         "error400":
             MessageLookupByLibrary.simpleMessage("Provided image is empty"),
         "error402": MessageLookupByLibrary.simpleMessage(
-            "Too many requests, please try again later"),
+            "Too many requests, please try again later",),
         "error500":
             MessageLookupByLibrary.simpleMessage("Something wrong on server"),
         "error503":
             MessageLookupByLibrary.simpleMessage("Search queue is full"),
         "error504": MessageLookupByLibrary.simpleMessage(
-            "Server is overload, try again later"),
+            "Server is overload, try again later",),
         "errorTimeOut":
             MessageLookupByLibrary.simpleMessage("Response timed out"),
         "errorUnexpected": m1,
@@ -54,7 +54,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Something went wrong"),
         "newSearch": MessageLookupByLibrary.simpleMessage("New search"),
         "newSearchHint": MessageLookupByLibrary.simpleMessage(
-            "Enter URL, drop file to window or select file via button"),
+            "Enter URL, drop file to window or select file via button",),
         "noJapaneseName":
             MessageLookupByLibrary.simpleMessage("No japanese name"),
         "noRomajiName": MessageLookupByLibrary.simpleMessage("No romaji name"),
@@ -63,6 +63,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "selectFileButtonText":
             MessageLookupByLibrary.simpleMessage("Select file"),
         "similarityText": m2,
-        "viewInAnilist": MessageLookupByLibrary.simpleMessage("View in anilist")
+        "viewInAnilist": MessageLookupByLibrary.simpleMessage("View in anilist"),
       };
 }

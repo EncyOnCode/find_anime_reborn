@@ -10,6 +10,6 @@ class AppRouter {
             title: 'Search',
             child: SearchScreen(),
           ),
-    }),
+    }).call,
   );
 }

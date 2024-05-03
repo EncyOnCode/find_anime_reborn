@@ -10,12 +10,11 @@ import '../theme/theme.dart';
 
 class FindAnimeApp extends StatelessWidget {
   FindAnimeApp({
-    Key? key,
+    super.key,
     AppThemeBloc? themeBloc,
     AppLanguageBloc? languageBloc,
   })  : _theme = themeBloc ??= AppThemeBloc(Brightness.dark),
-        _language = languageBloc ??= AppLanguageBloc(const Locale('en')),
-        super(key: key);
+        _language = languageBloc ??= AppLanguageBloc(const Locale('en'));
 
   final AppThemeBloc _theme;
   final AppLanguageBloc _language;

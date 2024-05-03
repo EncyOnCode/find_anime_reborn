@@ -39,7 +39,7 @@ MessageLookupByLibrary? _findExact(String localeName) {
 Future<bool> initializeMessages(String localeName) async {
   var availableLocale = Intl.verifiedLocale(
       localeName, (locale) => _deferredLibraries[locale] != null,
-      onFailure: (_) => null);
+      onFailure: (_) => null,);
   if (availableLocale == null) {
     return new Future.value(false);
   }
@@ -47,6 +47,7 @@ Future<bool> initializeMessages(String localeName) async {
   await (lib == null ? new Future.value(false) : lib());
   initializeInternalMessageLookup(() => new CompositeMessageLookup());
   messageLookup.addLocale(availableLocale, _findGeneratedMessagesFor);
+
   return new Future.value(true);
 }
 
@@ -62,5 +63,6 @@ MessageLookupByLibrary? _findGeneratedMessagesFor(String locale) {
   var actualLocale =
       Intl.verifiedLocale(locale, _messagesExistFor, onFailure: (_) => null);
   if (actualLocale == null) return null;
+
   return _findExact(actualLocale);
 }

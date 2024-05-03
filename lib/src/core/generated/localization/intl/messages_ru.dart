@@ -38,28 +38,28 @@ class MessageLookup extends MessageLookupByLibrary {
         "enterImageUrl":
             MessageLookupByLibrary.simpleMessage("Введите URL изображения"),
         "enterImageUrlHint": MessageLookupByLibrary.simpleMessage(
-            "Ссылка на изображение дожна быть прямой"),
+            "Ссылка на изображение дожна быть прямой",),
         "episodeText": m0,
         "error400": MessageLookupByLibrary.simpleMessage(
-            "Предоставленное изображение пустое"),
+            "Предоставленное изображение пустое",),
         "error402": MessageLookupByLibrary.simpleMessage(
-            "Слишком много запросов, попробуйте позже"),
+            "Слишком много запросов, попробуйте позже",),
         "error500": MessageLookupByLibrary.simpleMessage(
-            "Что-то пошло не так на сервере"),
+            "Что-то пошло не так на сервере",),
         "error503":
             MessageLookupByLibrary.simpleMessage("Поисковая очередь заполнена"),
         "error504": MessageLookupByLibrary.simpleMessage(
-            "Сервер перегружен, попробуйте повторить запрос позже"),
+            "Сервер перегружен, попробуйте повторить запрос позже",),
         "errorTimeOut": MessageLookupByLibrary.simpleMessage(
-            "Время ответа сервера истекло"),
+            "Время ответа сервера истекло",),
         "errorUnexpected": m1,
         "errorUnknown":
             MessageLookupByLibrary.simpleMessage("Что-то пошло не так"),
         "newSearch": MessageLookupByLibrary.simpleMessage("Новый поиск"),
         "newSearchHint": MessageLookupByLibrary.simpleMessage(
-            "Введите URL, перетащите файл на окно или выберите файл с помощью кнопки"),
+            "Введите URL, перетащите файл на окно или выберите файл с помощью кнопки",),
         "noJapaneseName": MessageLookupByLibrary.simpleMessage(
-            "Японское название не найдено"),
+            "Японское название не найдено",),
         "noRomajiName":
             MessageLookupByLibrary.simpleMessage("Ромадзи название не найдено"),
         "openSearchButton":
@@ -69,6 +69,6 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Выбрать файл"),
         "similarityText": m2,
         "viewInAnilist":
-            MessageLookupByLibrary.simpleMessage("Открыть на anilist")
+            MessageLookupByLibrary.simpleMessage("Открыть на anilist"),
       };
 }

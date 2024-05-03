@@ -12,10 +12,10 @@ import '../../../core/generated/localization/l10n.dart';
 
 class ResultListItem extends StatelessWidget {
   const ResultListItem({
-    Key? key,
+    super.key,
     required this.result,
     required this.device,
-  }) : super(key: key);
+  });
   final Result result;
   final LayoutClass device;
 
@@ -34,9 +34,9 @@ class ResultListItem extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
         ),
-        child: Column(
+        child: const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: const [
+          children: [
             Padding(
               padding: EdgeInsets.symmetric(
                 horizontal: 12.0,
@@ -69,8 +69,8 @@ class ResultListItem extends StatelessWidget {
 
 class ResultButtonBar extends StatelessWidget {
   const ResultButtonBar({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -80,7 +80,7 @@ class ResultButtonBar extends StatelessWidget {
           height: 42.0,
           child: OutlinedButton(
             onPressed: () => launchUrl(Uri.parse(
-              'https://anilist.co/anime/${ResultListItem.getResultOf(context).idMal}',
+              'https://myanimelist.net/anime/${ResultListItem.getResultOf(context).idMal}',
             )),
             child: Text(S.of(context).viewInAnilist),
           ),
@@ -112,8 +112,8 @@ class ResultButtonBar extends StatelessWidget {
 
 class ResultTitleBlock extends StatelessWidget {
   const ResultTitleBlock({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -147,8 +147,8 @@ class ResultTitleBlock extends StatelessWidget {
 
 class ResultMediaViewer extends StatefulWidget {
   const ResultMediaViewer({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<ResultMediaViewer> createState() => _ResultMediaViewerState();
@@ -215,8 +215,8 @@ class _ResultMediaViewerState extends State<ResultMediaViewer> {
 
 class ResultInfoText extends StatelessWidget {
   const ResultInfoText({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -252,8 +252,8 @@ class ResultInfoText extends StatelessWidget {
 
 class ResultEpisodeInfo extends StatelessWidget {
   const ResultEpisodeInfo({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

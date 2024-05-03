@@ -31,14 +31,15 @@ class TraceMoeApiClient {
       : _httpClient = httpClient ?? http.Client();
   final http.Client _httpClient;
 
-  static const _baseUrl = 'https://api.trace.moe/search?anilistInfo';
+  static const _baseUrl = 'https://api.trace.moe/search?anilistInfo&url=';
 
   /// Send GET method to get result from TraceMoe with given image [url].
   ///
   /// Will throw exceptions according to the API documentation:
   /// https://soruly.github.io/trace.moe-api/#/docs?id=error-codes
   Future<SearchResultModel> getResultByImageUrl(String url) async {
-    final response = await _httpClient.get(Uri.parse('$_baseUrl&url=$url'));
+    final response = await _httpClient.get(Uri.parse(_baseUrl + url));
+
 
     return _getSearchModel(response);
   }
